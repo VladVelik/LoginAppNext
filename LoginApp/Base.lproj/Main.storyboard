@@ -32,57 +32,33 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SSZ-44-2sV">
-                                <rect key="frame" x="161.5" y="248" width="91" height="42"/>
+                                <rect key="frame" x="173.5" y="248" width="67" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C30-8r-Vbd">
-                                        <rect key="frame" x="0.0" y="0.0" width="91" height="42"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Log In">
-                                                    <attributes>
-                                                        <font key="NSFont" size="24" name="Helvetica"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C30-8r-Vbd">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="40"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Log In"/>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="C30-8r-Vbd" firstAttribute="centerX" secondItem="SSZ-44-2sV" secondAttribute="centerX" id="J0z-EV-NnZ"/>
                                     <constraint firstItem="C30-8r-Vbd" firstAttribute="centerY" secondItem="SSZ-44-2sV" secondAttribute="centerY" id="auK-Ry-tgc"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="euC-yc-8RR">
-                                <rect key="frame" x="46" y="308" width="322" height="28"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="euC-yc-8RR">
+                                <rect key="frame" x="46" y="306" width="322" height="29"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igs-it-Jb2">
-                                        <rect key="frame" x="0.0" y="0.0" width="149.5" height="28"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Forgot User Name?">
-                                                    <attributes>
-                                                        <font key="NSFont" size="12" name="Helvetica"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="29"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Forgot User Name?"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blj-Lj-jbp">
-                                        <rect key="frame" x="172.5" y="0.0" width="149.5" height="28"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Forgot Password?">
-                                                    <attributes>
-                                                        <font key="NSFont" size="12" name="Helvetica"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
+                                        <rect key="frame" x="208" y="0.0" width="114" height="29"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Forgot Password?"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -96,6 +72,7 @@
                             <constraint firstItem="pz2-j4-Ex3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="R1Q-18-ug2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pz2-j4-Ex3" secondAttribute="trailing" constant="46" id="YPl-Ft-keR"/>
                             <constraint firstItem="euC-yc-8RR" firstAttribute="top" secondItem="SSZ-44-2sV" secondAttribute="bottom" constant="18" id="d0R-w6-g5X"/>
+                            <constraint firstItem="euC-yc-8RR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d5O-bZ-eRo"/>
                             <constraint firstItem="SSZ-44-2sV" firstAttribute="top" secondItem="pz2-j4-Ex3" secondAttribute="bottom" constant="48" id="jhn-rg-TxU"/>
                             <constraint firstItem="C30-8r-Vbd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uds-S7-wKl"/>
                         </constraints>
