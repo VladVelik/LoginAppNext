@@ -10,12 +10,12 @@ import UIKit
 final class WelcomeViewController: UIViewController {
     @IBOutlet var welcomeLabel: UILabel!
     
-    var userName = ""
+    var user = User.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradient()
-        welcomeLabel.text = "Welcome, \(userName)!"
+        welcomeLabel.text = "Welcome, \(user.person.fullName)!"
     }
     
     private func setGradient() {

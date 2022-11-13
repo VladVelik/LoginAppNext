@@ -8,15 +8,13 @@
 import UIKit
 
 final class LoginViewController: UIViewController {
+    private let user = User.getUser()
+    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    private let userName = "Vladislav"
-    private let password = "password"
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = userName
+        guard segue.destination is WelcomeViewController else { return }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -25,8 +23,8 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func logInPressed(_ sender: Any) {
-        if (userNameTextField.text == userName &&
-            passwordTextField.text == password) {
+        if (userNameTextField.text == user.login &&
+            passwordTextField.text == user.password) {
             performSegue(withIdentifier: "identifier", sender: nil)
         } else {
             showMyAlert(title: "Hmm", message: "Incorrect Username or password!")
@@ -42,8 +40,8 @@ final class LoginViewController: UIViewController {
     
     @IBAction func forgotSomethingPressed(_ sender: Any) {
         (sender as AnyObject).tag == 0
-            ? showMyAlert(title: "Hmmm", message: "Your name is \(userName)!")
-            : showMyAlert(title: "Hmmm", message: "Your password is \(password)!")
+        ? showMyAlert(title: "Hmmm", message: "Your name is \(user.login)!")
+        : showMyAlert(title: "Hmmm", message: "Your password is \(user.password)!")
     }
     
     private func showMyAlert(title: String, message: String) {
